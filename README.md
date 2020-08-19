@@ -9,7 +9,7 @@ appsettings.json
 ```
 {
   "CommonSettings": {
-    "ClientConfigurationsPath": "%userprofile%\\documents\\QuickAuth",
+    "ClientConfigurationsPath": "%userprofile%\documents\QuickAuth",
     "CopyAccessTokenToClipboard": true
   }
 }
