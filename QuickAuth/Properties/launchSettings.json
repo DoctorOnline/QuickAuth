@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuickAuth": {
+      "commandName": "Project",
+      "commandLineArgs": "clients"
+    }
+  }
+}
