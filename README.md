@@ -1,7 +1,7 @@
 # QuickAuth
-CLI to quickly get an access token for a specific client.
-
 ![](https://github.com/DoctorOnline/QuickAuth//workflows/.NET%20Core/badge.svg)
+
+CLI to quickly get an access token for a specific client.
 
 ## CLI configuration
 appsettings.json
