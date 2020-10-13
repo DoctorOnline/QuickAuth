@@ -1,9 +1,9 @@
 # QuickAuth
 ![](https://github.com/DoctorOnline/QuickAuth//workflows/.NET%20Core/badge.svg)
 
-CLI to quickly get an access token for a specific client.
+The CLI to quickly get an access token for a specific client.
 
-## CLI configuration
+## The CLI configuration
 appsettings.json
 
 ```
@@ -15,7 +15,7 @@ appsettings.json
 }
 ```
 
-## Client configuration
+## A client configuration
 **Default location:** %userprofile%\documents\QuickAuth  
 **File name:** %client%.json  
 
@@ -35,7 +35,7 @@ appsettings.json
 start quickauth.exe "-c clientname"
 ```
 
-## In conclusion
+## In addition
 You can add CLI path to your system environment variables and use it directly:
 
 ```
@@ -43,7 +43,7 @@ quickauth "-c clientname"
 ```
 
 ```
-PS C:\Users\doctoronline> quickauth "-c clientname"
+PS C:\Users\DoctorOnline> quickauth "-c clientname"
 [17:23:55 INF] Start processing HTTP request POST https://api.domain.com/auth/token
 [17:23:55 INF] Sending HTTP request POST https://api.domain.com/auth/token
 [17:23:56 INF] Received HTTP response after 1372.7802ms - OK
