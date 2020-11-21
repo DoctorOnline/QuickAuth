@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth", "QuickAuth\QuickAuth.csproj", "{32055BCA-AA15-4CA5-B420-F61C0311F1A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth", "src\QuickAuth\QuickAuth.csproj", "{32055BCA-AA15-4CA5-B420-F61C0311F1A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth.Core", "QuickAuth.Core\QuickAuth.Core.csproj", "{C3AB8FA7-E405-4EC7-BEEE-7BE8C4B71FD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth.Core", "src\QuickAuth.Core\QuickAuth.Core.csproj", "{C3AB8FA7-E405-4EC7-BEEE-7BE8C4B71FD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
