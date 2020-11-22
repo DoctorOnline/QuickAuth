@@ -26,7 +26,6 @@ namespace QuickAuth
                 .AddHttpClient()
                 .Configure<CommonSettings>(opt => configuration.GetSection(nameof(CommonSettings)).Bind(opt))
                 .AddSingleton<ICommand, ClientsCommand>()
-                .AddSingleton<ICommand, TokenCommand>()
                 .AddSingleton<IClientsService, ClientsService>()
                 .AddSingleton<IAuthService, AuthService>()
                 .AddSingleton<App>()
