@@ -19,7 +19,7 @@ namespace QuickAuth.Commands
             _logger = logger;
 
             Name = "clients";
-            Description = "Gets list of existed clients";
+            Description = "Gets list of existing clients";
             HelpOption("-? | -h | --help");
             OnExecuteAsync(ExecuteAsync);
         }

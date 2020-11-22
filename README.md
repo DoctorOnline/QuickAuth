@@ -32,18 +32,18 @@ appsettings.json
 
 ## How to get an access token
 ```
-start quickauth.exe "-c clientname"
+start quickauth.exe "token -c clientname"
 ```
 
 ## In addition
 You can add CLI path to your system environment variables and use it directly:
 
 ```
-quickauth "-c clientname"
+quickauth token -c clientname
 ```
 
 ```
-PS C:\Users\DoctorOnline> quickauth "-c clientname"
+PS C:\Users\DoctorOnline> quickauth token -c clientname
 [17:23:55 INF] Start processing HTTP request POST https://api.domain.com/auth/token
 [17:23:55 INF] Sending HTTP request POST https://api.domain.com/auth/token
 [17:23:56 INF] Received HTTP response after 1372.7802ms - OK

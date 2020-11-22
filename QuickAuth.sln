@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth", "src\QuickAuth\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickAuth.Core", "src\QuickAuth.Core\QuickAuth.Core.csproj", "{C3AB8FA7-E405-4EC7-BEEE-7BE8C4B71FD7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A6C7C6EA-661E-4ABA-AB42-8AFF264727A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{32055BCA-AA15-4CA5-B420-F61C0311F1A1} = {A6C7C6EA-661E-4ABA-AB42-8AFF264727A9}
+		{C3AB8FA7-E405-4EC7-BEEE-7BE8C4B71FD7} = {A6C7C6EA-661E-4ABA-AB42-8AFF264727A9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D2563C7D-349E-4433-9DAA-BE79C1FEA8CD}
