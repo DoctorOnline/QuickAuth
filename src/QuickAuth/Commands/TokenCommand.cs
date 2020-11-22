@@ -47,12 +47,6 @@ namespace QuickAuth.Commands
 
             var client = await _clientsService.GetClientAsync(clientName);
 
-            if (client is null)
-            {
-                _logger.LogWarning("Client not found.");
-                return 1;
-            }
-
             try
             {
                 var token = await _authService.GetTokenAsync(client);

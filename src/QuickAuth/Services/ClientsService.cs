@@ -25,7 +25,7 @@ namespace QuickAuth.Services
             var filePath = Path.Join(_settings.ClientConfigurationsPath, $"{name}.json");
 
             if (!IsClientExists(filePath))
-                return null;
+                throw new FileNotFoundException("Client not found.");
 
             var result = await File.ReadAllTextAsync(filePath);
             
