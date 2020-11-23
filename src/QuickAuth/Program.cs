@@ -40,17 +40,7 @@ namespace QuickAuth
             loggerFactory.AddSerilog();
 
             var app = serviceProvider.GetRequiredService<App>();
-            var result = 1;
-
-            try
-            {
-                result = await app.ExecuteAsync(args);
-            }
-            catch (Exception ex)
-            {
-                result = 0;
-                Log.Logger.Error(ex.Message);
-            }
+            var result = await app.ExecuteAsync(args);
 #if DEBUG
             Console.ReadKey();
 #endif

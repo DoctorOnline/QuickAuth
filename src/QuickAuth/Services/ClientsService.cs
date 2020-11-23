@@ -18,14 +18,14 @@ namespace QuickAuth.Services
             _settings = settings.Value;
         }
 
-        public async Task<Client> GetClientAsync(string name)
+        public async Task<Client?> GetClientAsync(string name)
         {
             CreateDirectoryIfNotExists(_settings.ClientConfigurationsPath);
             
             var filePath = Path.Join(_settings.ClientConfigurationsPath, $"{name}.json");
 
             if (!IsClientExists(filePath))
-                throw new FileNotFoundException("Client not found.");
+                return null;
 
             var result = await File.ReadAllTextAsync(filePath);
             

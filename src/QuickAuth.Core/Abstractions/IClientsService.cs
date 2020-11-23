@@ -8,6 +8,6 @@ namespace QuickAuth.Core.Abstractions
     {
         Task<IReadOnlyList<string>> GetClientsAsync();
 
-        Task<Client> GetClientAsync(string name);
+        Task<Client?> GetClientAsync(string name);
     }
 }

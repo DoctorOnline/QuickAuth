@@ -29,6 +29,7 @@ namespace QuickAuth.Commands
             try
             {
                 var clients = await _clientsService.GetClientsAsync();
+
                 _logger.LogInformation("Clients: {@clients}", clients);
                 return 0;
             }

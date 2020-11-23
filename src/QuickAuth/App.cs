@@ -30,9 +30,7 @@ namespace QuickAuth
 
             foreach (var command in commands)
             {
-                var commandLineApp = command as CommandLineApplication;
-
-                if (commandLineApp is null)
+                if (command is not CommandLineApplication commandLineApp)
                 {
                     throw new InvalidCastException("Commands must inherit from ICommand and CommandLineApplication");
                 }
@@ -61,6 +59,12 @@ namespace QuickAuth
             }
 
             var client = await _clientsService.GetClientAsync(clientName);
+
+            if (client is null)
+            {
+                _logger.LogInformation("Client not found.");
+                return 1;
+            }
 
             try
             {
