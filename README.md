@@ -1,5 +1,5 @@
 # QuickAuth
-![](https://github.com/doctoronline/QuickAuth/workflows/.NET%20Core/badge.svg)
+![](https://github.com/alexeychuvagin/QuickAuth/workflows/.NET%20Core/badge.svg)
 
 The CLI to quickly get an access token for a specific client.
 
