@@ -1,5 +1,5 @@
 # QuickAuth
-![](https://github.com/doctoronline/QuickAuth/workflows/.NET%20Core/badge.svg)
+![](https://github.com/alexeychuvagin/QuickAuth/workflows/.NET%20Core/badge.svg)
 
 The CLI to quickly get an access token for a specific client.
 
@@ -21,7 +21,7 @@ appsettings.json
 
 ```
 {
-  "username": "DoctorOnline",
+  "username": "alex",
   "password": "StrongPassword",
   "authUrl": "https://api.domain.com/auth/token",
   "headers": {
@@ -43,7 +43,7 @@ quickauth -c clientname
 ```
 
 ```
-PS C:\Users\DoctorOnline> quickauth -c clientname
+PS C:\Users\Alex> quickauth -c clientname
 [17:23:55 INF] Start processing HTTP request POST https://api.domain.com/auth/token
 [17:23:55 INF] Sending HTTP request POST https://api.domain.com/auth/token
 [17:23:56 INF] Received HTTP response after 1372.7802ms - OK
